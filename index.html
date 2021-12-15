@@ -11,9 +11,11 @@
 </head>
 <body>
     <div id="root">
-        <h1 v-for="email in emails">
-            {{ email }}
-        </h1>
+        <div v-if="emails.length === 10" >
+            <h1 v-for="email in emails" >
+                {{ email }}
+            </h1>
+        </div>
     </div>
     
 
